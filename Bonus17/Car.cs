@@ -67,6 +67,13 @@ namespace Bonus17
 
         }
 
+        public override string ToString()
+        {
+
+            return $"{Make, -7} {Model, -10} ({Year}): ${Price, -8}";
+            
+        }
+
     }
 
 }

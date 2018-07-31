@@ -20,6 +20,17 @@ namespace Bonus17
 
         }
 
+        public UsedCar():base()
+        {
+
+            Mileage = 20000;
+            Make = "Honda";
+            Model = "Civic";
+            Year = 2008;
+            Price = 15000;
+
+        }
+
         public UsedCar(Car c, double mi)
         {
 
@@ -37,6 +48,11 @@ namespace Bonus17
             
             Mileage = mi;
 
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + $" ({Mileage} mi)";
         }
 
     }
